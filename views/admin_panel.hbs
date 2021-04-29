@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/admin_panel_.css">
+    <title>Admin</title>
+</head>
+<body>
+<div class="container">
+    <input id="searchEmails" class="search-input" type="text" placeholder="Search...">
+    <button id="importCsv" type="button" class="btn-body">Import CSV</button>
+    <div class="container__header">
+        <ul>
+            <li>Sort by:</li>
+            <li onclick="switchNameSort()">Name</li>
+            <li onclick="switchDateSort()">Date</li>
+        </ul>
+    </div>
+    <div class="container__emails">
+        <div>Emails:</div>
+        <ul id="emailTags">
+
+        </ul>
+    </div>
+    <div class="container__body">
+        <div id="pageContainer" class="pages">
+
+        </div>
+    </div>
+    <div class="container__footer">
+        <button id="left">Left</button>
+        <div id="page-number" class="page">1</div>
+        <button id="right">Right</button>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/AdminScript.js"></script>
+</body>
+</html>
